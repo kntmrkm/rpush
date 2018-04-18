@@ -84,7 +84,7 @@ module Rpush
       show_welcome_if_needed
 
       # Blocking call, returns after Feeder.stop is called from another thread.
-      #Feeder.start
+      Feeder.start
 
       # Wait for shutdown to complete.
       #shutdown_lock.synchronize { true }
