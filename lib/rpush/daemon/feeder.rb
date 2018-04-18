@@ -13,9 +13,9 @@ module Rpush
         end
 
         @thread.join
-      #rescue StandardError => e
-      #  log_error(e)
-      #  reflect(:error, e)
+      rescue StandardError => e
+        log_error(e)
+        reflect(:error, e)
       ensure
         @thread = nil
       end
