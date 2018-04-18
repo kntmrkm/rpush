@@ -87,7 +87,7 @@ module Rpush
       Feeder.start
 
       # Wait for shutdown to complete.
-      shutdown_lock.synchronize { true }
+      #shutdown_lock.synchronize { true }
     end
 
     def self.shutdown
